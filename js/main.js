@@ -3,8 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const lenis = new Lenis({
         duration: 1.2,
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        orientation: 'vertical',
-        gestureOrientation: 'vertical',
         smoothWheel: true,
     });
 
@@ -15,20 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     requestAnimationFrame(raf);
 
-    // Custom Luxury Cursor
-    const dot = document.querySelector('.cursor-dot');
-    const outline = document.querySelector('.cursor-outline');
-
-    window.addEventListener('mousemove', (e) => {
-        dot.style.left = e.clientX + 'px';
-        dot.style.top = e.clientY + 'px';
-
-        outline.animate({
-            left: `${e.clientX}px`,
-            top: `${e.clientY}px`
-        }, { duration: 500, easing: 'ease-out' });
-    });
-
     // Scroll Progress Bar
     window.addEventListener('scroll', () => {
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -36,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const scrolled = (winScroll / height) * 100;
         document.getElementById('scrollProgress').style.width = scrolled + "%";
 
-        // Header scroll effect
         const header = document.querySelector('header');
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
@@ -45,7 +28,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Simple form submit
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Simple form submission
     const form = document.querySelector('.contact-form');
     if (form) {
         form.addEventListener('submit', (e) => {

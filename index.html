@@ -7,12 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600;800&family=Mukta:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-
-    <!-- Custom Luxury Cursor -->
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
 
     <!-- Progress Bar -->
     <div class="progress-container">
@@ -36,7 +33,7 @@
         </nav>
     </header>
 
-    <!-- Hero Section (Awwwards-style Typography) -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="container">
@@ -49,100 +46,107 @@
             </div>
         </div>
         <div class="scroll-indicator">
-            <span>Scroll to Explore</span>
+            <span class="scroll-text">Explore Pathkhola</span>
             <div class="mouse"></div>
         </div>
     </section>
 
-    <!-- About Section (OnePageLove-style Scroll Reveal) -->
+    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="about-layout">
                 <div class="about-image-wrapper">
-                    <div class="img-placeholder">
-                        <!-- Image will go here -->
-                        <div class="image-overlay"></div>
-                    </div>
-                    <div class="floating-stat">
- same as 10+ Years <br><span>of Community Love</span></div>
+                    <div class="main-about-img" style="background-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=1000');"></div>
+                    <div class="floating-card card-1">10+ Years of Service</div>
+                    <div class="floating-card card-2">Community First</div>
                 </div>
                 <div class="about-text">
                     <h2 class="section-label">The Foundation</h2>
                     <h3 class="section-title">Rooted in Service, <br>Growing in Strength.</h3>
                     <p class="description">The Pahele Youth Club wasn't born in a boardroom; it was born on the dusty trails and tea-shops of Pathkhola. We saw the beauty of our hills, but we also saw the gaps.</p>
                     <p class="description">Today, we stand as a bridge between traditional wisdom and youthful energy, working tirelessly to ensure that Pathkhola doesn't just survive, but thrives.</p>
+                    <div class="about-stats">
+                        <div class="stat-item"><strong>50+</strong><span>Members</span></div>
+                        <div class="stat-item"><strong>12</strong><span>Projects</span></div>
+                        <div class="stat-item"><strong>1k+</strong><span>Lives Touched</span></div>
+                    </div>
                     <a href="#projects" class="text-link">See our impact &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Impact Grid (Mobbin-style Bento Grid) -->
+    <!-- Impact Grid (Bento) -->
     <section id="impact" class="impact">
         <div class="container">
-            <h2 class="section-title center">Our measurable impact</h2>
+            <h2 class="section-title center">Our Measurable Impact</h2>
             <div class="bento-grid">
                 <div class="bento-item large">
                     <div class="bento-content">
-                        <h3>Environment</h3>
+                        <span class="bento-tag">Environment</span>
+                        <h3>Green Pathkhola</h3>
                         <p>500kg+ Plastic removed from hillsides</p>
                     </div>
                 </div>
                 <div class="bento-item small">
                     <div class="bento-content">
-                        <h3>Education</h3>
-                        <p>100+ Students mentored</p>
+                        <span class="bento-tag">Education</span>
+                        <h3>Mentorship</h3>
+                        <p>100+ Students guided</p>
                     </div>
                 </div>
                 <div class="bento-item medium">
                     <div class="bento-content">
-                        <h3>Health</h3>
-                        <p>3 Blood Donation Camps</p>
+                        <span class="bento-tag">Health</span>
+                        <h3>Blood Drives</h3>
+                        <p>3 Camps conducted</p>
                     </div>
                 </div>
                 <div class="bento-item small">
                     <div class="bento-content">
-                        <h3>Unity</h3>
-                        <p>50+ Active Youth Members</p>
+                        <span class="bento-tag">Unity</span>
+                        <h3>Active Youth</h3>
+                        <p>50+ Core members</p>
                     </div>
                 </div>
                 <div class="bento-item medium">
                     <div class="bento-content">
+                        <span class="bento-tag">Civic</span>
                         <h3>Infrastructure</h3>
-                        <p>Bridge Restoration Project</p>
+                        <p>Bridge Restoration</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery (Webflow-style Horizontal Scroll/Grid) -->
+    <!-- Gallery (Awwwards Style) -->
     <section id="gallery" class="gallery">
         <div class="container">
             <h2 class="section-title center">Moments of Change</h2>
             <div class="gallery-grid">
-                <div class="gallery-item"><div class="img-placeholder"></div><span class="item-tag">Clean-up</span></div>
-                <div class="gallery-item"><div class="img-placeholder"></div><span class="item-tag">Education</span></div>
-                <div class="gallery-item"><div class="img-placeholder"></div><span class="item-tag">Health</span></div>
-                <div class="gallery-item"><div class="img-placeholder"></div><span class="item-tag">Community</span></div>
-                <div class="gallery-item"><div class="img-placeholder"></div><span class="item-tag">Plantation</span></div>
-                <div class="gallery-item"><div class="img-placeholder"></div><span class="item-tag">Mentorship</span></div>
+                <div class="gallery-item"><div class="img-placeholder" style="background-image: url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=500');"></div><span class="item-tag">Clean-up</span></div>
+                <div class="gallery-item"><div class="img-placeholder" style="background-image: url('https://images.unsplash.com/photo-1488521787991-ef39ca3687//auto=format&fit=crop&q=80&w=500');"></div><span class="item-tag">Education</span></div>
+                <div class="gallery-item"><div class="img-placeholder" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2//auto=format&fit=crop&q=80&w=500');"></div><span class="item-tag">Health</span></div>
+                <div class="gallery-item"><div class="img-placeholder" style="background-image: url('https://images.unsplash.com/photo-1517486808906-6ca8b3f own/auto=format&fit=crop&q=80&w=500');"></div><span class="item-tag">Community</span></div>
+                <div class="gallery-item"><div class="img-placeholder" style="background-image: url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=500');"></div><span class="item-tag">Plantation</span></div>
+                <div class="gallery-item"><div class="img-placeholder" style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db//auto=format&fit=crop&q=80&w=500');"></div><span class="item-tag">Mentorship</span></div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section (Classy Minimalist) -->
+    <!-- Team Section -->
     <section id="team" class="team">
         <div class="container">
             <h2 class="section-title center">The Visionaries</h2>
             <div class="team-grid">
                 <div class="team-member">
-                    <div class="member-img"></div>
+                    <div class="member-img" style="background-image: url('https://i.pravatar.cc/150?u=kamal')"></div>
                     <h4>Kamal Gaihre</h4>
                     <p>President</p>
                 </div>
                 <div class="team-member">
-                    <div class="member-img"></div>
+                    <div class="member-img" style="background-image: url('https://i.pravatar.cc/150?u=sachin')"></div>
                     <h4>Sachin Pathak</h4>
                     <p>Vice President</p>
                 </div>
@@ -160,19 +164,21 @@
         </div>
     </section>
 
-    <!-- Chiya Guff (Dialogue Section) -->
+    <!-- Chiya Guff -->
     <section id="chiya" class="chiya-guff">
         <div class="container">
             <div class="guff-card">
                 <span class="badge">The Local Vibe</span>
-                <h2>चिया-गफ कुना</h2>
-                <p class="guff-text">"Last Tuesday, we sat down with the elders and decided the old bridge needs a fresh coat of paint. We're starting this Friday. Who's in?"</p>
-                <div class="guff-footer">Shared over a cup of tea in Pathkhola</div>
+                <h2 class="chiya-title">चिया-गफ कुना</h2>
+                <p class="chiya-subtitle">Where the best ideas are born over a cup of tea.</p>
+                <div class="guff-bubble">
+                    <p>"Last Tuesday, we sat down with the elders and decided the old bridge needs a fresh coat of paint. We're starting this Friday. Who's in?"</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section (Modern Minimalist) -->
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="contact-layout">
@@ -180,9 +186,9 @@
                     <h2 class="section-title">Connect with us</h2>
                     <p>Whether you want to volunteer, donate, or just share an idea, our doors are always open.</p>
                     <div class="contact-details">
-                        <div class="detail-item"><span>📍</span> Pathkhola, Nepal</div>
-                        <div class="detail-item"><span>📞</span> +977 98XXXXXXXX</div>
-                        <div class="detail-item"><span>✉️</span> info@paheleyouthclub.org</div>
+                        <div class="detail-item"><span class="icon">📍</span> Pathkhola, Nepal</div>
+                        <div class="detail-item"><span class="icon">📞</span> +977 98XXXXXXXX</div>
+                        <div class="detail-item"><span class="icon">✉️</span> info@paheleyouthclub.org</div>
                     </div>
                 </div>
                 <div class="contact-right">
