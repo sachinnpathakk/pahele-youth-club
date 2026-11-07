@@ -1,209 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pahele Youth Club | Legacy of Service</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-    <script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://unpkg.com/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-</head>
-<body>
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">Pahele<span class="accent">YouthClub</span></div>
+                <p class="footer-desc">Cultivating leadership and serving the heart of Pathkhola. A legacy of youth-led transformation.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link">FB</a>
+                    <a href="#" class="social-link">IG</a>
+                    <a href="#" class="social-link">TW</a>
+                    <a href="#" class="social-link">LI</a>
+                </div>
+            </div>
 
-    <div class="progress-container">
-        <div class="progress-bar" id="scrollProgress"></div>
+            <div class="footer-links-group">
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#impact">Impact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#team">Our Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="bottom-line">
+                <p>&copy; 2026 Pahele Youth Club of Pathkhola. All Rights Reserved.</p>
+                <p class="credit">Created by <span class="highlight-name">Sachin Pathak</span> for the welfare of the community.</p>
+            </div>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Accessibility</a>
+            </div>
+        </div>
     </div>
-
-    <header>
-        <nav class="container">
-            <div class="logo">PAHELE<span class="accent">.</span></div>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">Our Story</a></li>
-                <li><a href="#impact" class="nav-link">Impact</a></li>
-                <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <a href="#contact" class="btn btn-cta">Join Us</a>
-        </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="hero-bg-animation"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="split-text">Empowering <br><span class="italic-serif">Pathkhola</span></h1>
-                <p class="hero-subtitle">A collective of visionaries dedicated to social welfare, environmental restoration, and youth leadership in the heart of Nepal.</p>
-                <div class="hero-cta">
-                    <a href="#about" class="btn btn-primary">Explore Legacy</a>
-                    <a href="#impact" class="btn btn-secondary">View Impact</a>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-down">
-            <div class="mouse-wheel"></div>
-            <span>Scroll to Discover</span>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-visual">
-                    <div class="image-reveal-wrapper">
-                        <img src="https://images.unsplash.com/photo-1529156069898-49953_e39b3ac?auto=format&fit=crop&q=80&w=1000" alt="Community" class="reveal-img">
-                        <div class="img-overlay"></div>
-                    </div>
-                    <div class="floating-badge">Est. 2015</div>
-                </div>
-                <div class="about-text">
-                    <span class="label">Our Roots</span>
-                    <h2 class="section-title">Rooted in Service, <br>Growing in Strength.</h2>
-                    <p class="description">The Pahele Youth Club wasn't born in a boardroom; it was born on the dusty trails and tea-shops of Pathkhola. We saw the beauty of our hills, but we also saw the gaps.</p>
-                    <p class="description">Today, we stand as a bridge between traditional wisdom and youthful energy, working tirelessly to ensure that Pathkhola doesn't just survive, but thrives.</p>
-
-                    <div class="leadership-strip">
-                        <div class="lead-item">
-                            <span class="role">President</span>
-                            <span class="name">Kamal Gaihre</span>
-                        </div>
-                        <div class="lead-item">
-                            <span class="role">Vice President</span>
-                            <span class="name">Sachin Pathak</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="impact" class="impact">
-        <div class="container">
-            <div class="section-header">
-                <span class="label">Measurable Change</span>
-                <h2 class="section-title">The Impact Grid</h2>
-            </div>
-            <div class="bento-grid">
-                <div class="bento-item large" data-tilt>
-                    <div class="bento-content">
-                        <span class="tag">Eco</span>
-                        <h3>Green Pathkhola</h3>
-                        <p>500kg+ Plastic removed from hillsides</p>
-                    </div>
-                </div>
-                <div class="bento-item small" data-tilt>
-                    <div class="bento-content">
-                        <span class="tag">Edu</span>
-                        <h3>Mentorship</h3>
-                        <p>100+ Students guided</p>
-                    </div>
-                </div>
-                <div class="bento-item medium" data-tilt>
-                    <div class="bento-content">
-                        <span class="tag">Health</span>
-                        <h3>Blood Drives</h3>
-                        <p>3 Camps conducted</p>
-                    </div>
-                </div>
-                <div class="bento-item small" data-tilt>
-                    <div class="bento-content">
-                        <span class="tag">Unity</span>
-                        <h3>Active Youth</h3>
-                        <p>50+ Core members</p>
-                    </div>
-                </div>
-                <div class="bento-item medium" data-tilt>
-                    <div class="bento-content">
-                        <span class="tag">Civic</span>
-                        <h3>Infrastructure</h3>
-                        <p>Bridge Restoration</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <div class="section-header">
-                <span class="label">Visual Journey</span>
-                <h2 class="section-title">Moments of Change</h2>
-            </div>
-            <div class="gallery-masonry">
-                <div class="gallery-item tall"><img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=500" alt="Clean up"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1488521787991-ef39ca3687?auto=format&fit=crop&q=80&w=500" alt="Edu"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1576091160550-2?auto=format&fit=crop&q=80&w=500" alt="Health"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f?auto=format&fit=crop&q=80&w=500" alt="Community"></div>
-                <div class="gallery-item tall"><img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=500" alt="Plantation"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db?auto=format&fit=crop&q=80&w=500" alt="Mentorship"></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="chiya" class="chiya-guff">
-        <div class="container">
-            <div class="guff-card">
-                <div class="guff-header">
-                    <span class="badge">The Local Vibe</span>
-                </div>
-                <h2 class="chiya-title">चिया-गफ कुना</h2>
-                <p class="chiya-subtitle">Where the best ideas are born over a cup of tea.</p>
-                <div class="guff-bubble">
-                    <p>"Last Tuesday, we sat down with the elders and decided the old bridge needs a fresh coat of paint. We're starting this Friday. Who's in?"</p>
-                </div>
-                <div class="guff-meta">Shared in Pathkhola Community Hub</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-layout">
-                <div class="contact-left">
-                    <span class="label">Connect</span>
-                    <h2 class="section-title">Let's Build <br>Together</h2>
-                    <div class="contact-details">
-                        <div class="detail-item"><span>📍</span> Pathkhola, Nepal</div>
-                        <div class="detail-item"><span>📞</span> +977 98XXXXXXXX</div>
-                        <div class="detail-item"><span>✉️</span> info@paheleyouthclub.org</div>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <form class="glass-form">
-                        <div class="form-row">
-                            <input type="text" placeholder="Name" required>
-                            <input type="email" placeholder="Email" required>
-                        </div>
-                        <textarea placeholder="How can you contribute?" rows="5" required></textarea>
-                        <button type="submit" class="btn btn-main">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="logo">Pahele<span class="accent">YouthClub</span></div>
-                    <p>Cultivating leadership, serving community.</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#impact">Impact</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Pahele Youth Club. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-</body>
-</html>
+</footer>
