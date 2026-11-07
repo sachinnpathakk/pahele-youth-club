@@ -1,41 +1,56 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Cursor Follower
-    const cursor = document.querySelector('.cursor-follower');
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
+    // Initialize Lenis Smooth Scroll (Awwwards Standard)
+    const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        orientation: 'vertical',
+        gestureOrientation: 'vertical',
+        smoothWheel: true,
     });
 
-    // Mobile Menu
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-
-    if (burger) {
-        burger.addEventListener('click', () => {
-            nav.classList.toggle('nav-active');
-            burger.classList.toggle('toggle');
-        });
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
     }
 
-    // Smooth Scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-        });
+    requestAnimationFrame(raf);
+
+    // Custom Luxury Cursor
+    const dot = document.querySelector('.cursor-dot');
+    const outline = document.querySelector('.cursor-outline');
+
+    window.addEventListener('mousemove', (e) => {
+        dot.style.left = e.clientX + 'px';
+        dot.style.top = e.clientY + 'px';
+
+        outline.animate({
+            left: `${e.clientX}px`,
+            top: `${e.clientY}px`
+        }, { duration: 500, easing: 'ease-out' });
     });
 
-    // Simple form submission
+    // Scroll Progress Bar
+    window.addEventListener('scroll', () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById('scrollProgress').style.width = scrolled + "%";
+
+        // Header scroll effect
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Simple form submit
     const form = document.querySelector('.contact-form');
     if (form) {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('Message sent! The Pahele Youth Club will contact you soon.');
+            alert('Thank you for your message! The Pahele Youth Club will be in touch soon.');
             form.reset();
         });
     }
