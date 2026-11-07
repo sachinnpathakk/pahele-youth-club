@@ -9,14 +9,16 @@
 </head>
 <body>
 
+    <div class="cursor-follower"></div>
+
     <header>
         <nav class="container">
-            <div class="logo">Pahele<span>YouthClub</span></div>
+            <div class="logo">Pahele<span class="logo-accent">YouthClub</span></div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -27,46 +29,43 @@
     </header>
 
     <section id="home" class="hero">
+        <div class="hero-bg-shape"></div>
         <div class="container">
-            <h1 class="fade-in">Something big is happening in Pathkhola. <br><span>Want to be a part of it?</span></h1>
-            <p class="fade-in delay-1">We are a family of dreamers and doers making our home cleaner, greener, and stronger.</p>
-            <div class="hero-btns fade-in delay-2">
-                <a href="#contact" class="btn btn-primary">Let's Talk!</a>
-                <a href="#projects" class="btn btn-secondary">Our Work</a>
+            <div class="hero-content">
+                <h1 class="text-reveal">Something big is happening in <span class="highlight">Pathkhola.</span></h1>
+                <p class="hero-subtitle">We are a family of dreamers and doers. Join us in making our home cleaner, greener, and stronger.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Let's Talk!</a>
+                    <a href="#projects" class="btn btn-secondary">Our Work</a>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">Our Story</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>The Pahele Youth Club wasn't born in a boardroom; it was born on the dusty trails and tea-shops of Pathkhola. We saw the beauty of our hills, but we also saw the gaps—the need for better waste management, youth empowerment, and a unified platform for community service.</p>
-                    <p>Today, we stand as a bridge between traditional wisdom and youthful energy, working tirelessly to ensure that Pathkhola doesn't just survive, but thrives.</p>
+            <div class="about-grid">
+                <div class="about-visual">
+                    <div class="floating-card card-1">Youth Power</div>
+                    <div class="floating-card card-2">Community First</div>
+                    <div class="main-about-img"></div>
                 </div>
-                <div class="leadership">
-                    <h3>Our Leadership</h3>
-                    <div class="committee-grid">
-                        <div class="member">
-                            <div class="avatar">KG</div>
-                            <h4>Kamal Gaihre</h4>
-                            <p>President</p>
-                        </div>
-                        <div class="member">
-                            <div class="avatar">SP</div>
-                            <h4>Sachin Pathak</h4>
-                            <p>Vice President</p>
-                        </div>
-                        <div class="member empty">
-                            <div class="avatar">?</div>
-                            <h4>TBA</h4>
-                            <p>Secretary</p>
-                        </div>
-                        <div class="member empty">
-                            <div class="avatar">?</div>
-                            <h4>TBA</h4>
-                            <p>Treasurer</p>
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="lead">The Pahele Youth Club wasn't born in a boardroom; it was born on the dusty trails and tea-shops of Pathkhola.</p>
+                    <p>We saw the beauty of our hills, but we also saw the gaps—the need for better waste management and youth empowerment. Today, we stand as a bridge between traditional wisdom and youthful energy.</p>
+
+                    <div class="leadership-box">
+                        <h3>The Visionaries</h3>
+                        <div class="committee-mini">
+                            <div class="member-mini">
+                                <span class="role">President</span>
+                                <span class="name">Kamal Gaihre</span>
+                            </div>
+                            <div class="member-mini">
+                                <span class="role">Vice President</span>
+                                <span class="name">Sachin Pathak</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -76,27 +75,48 @@
 
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Look what we've done!</h2>
+            <h2 class="section-title center">Our Impact</h2>
             <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-img"></div>
-                    <div class="project-info">
-                        <h4>Community Clean-up</h4>
-                        <p>Removing plastic waste from our trails to keep Pathkhola green.</p>
+                <div class="project-card 3d-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-img env"></div>
+                            <div class="project-info">
+                                <h4>Green Trails</h4>
+                                <p>Cleaning Pathkhola's beauty.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <p>We've removed 500kg of plastic waste from the hillsides this year alone.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-img"></div>
-                    <div class="project-info">
-                        <h4>Youth Mentorship</h4>
-                        <p>Helping the next generation find their path through education.</p>
+                <div class="project-card 3d-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-img edu"></div>
+                            <div class="project-info">
+                                <h4>Youth Guide</h4>
+                                <p>Empowering the next gen.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <p>Mentorship programs for 50+ students in local schools.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-img"></div>
-                    <div class="project-info">
-                        <h4>Tree Plantation</h4>
-                        <p>Restoring our hillsides with native species for a better tomorrow.</p>
+                <div class="project-card 3d-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-img health"></div>
+                            <div class="project-info">
+                                <h4>Health First</h4>
+                                <p>Community wellness camps.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <p>Organized 3 blood donation camps and free health checkups.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,26 +125,30 @@
 
     <section id="chiya" class="chiya-guff">
         <div class="container">
-            <h2>चिया-गफ कुना (Chiya-Guff Corner)</h2>
-            <p class="subtitle">Where the best ideas are born over a cup of tea.</p>
-            <div class="guff-box">
-                <p>"Last Tuesday, we sat down with the elders of Pathkhola and decided that the old bridge needs a fresh coat of paint. We're starting this Friday. Who's in?"</p>
+            <div class="guff-wrapper">
+                <h2 class="chiya-title">चिया-गफ कुना</h2>
+                <p class="chiya-subtitle">Where the best ideas are born over a cup of tea.</p>
+                <div class="guff-bubble">
+                    <p>"Last Tuesday, we sat down with the elders and decided the old bridge needs a fresh coat of paint. We're starting this Friday. Who's in?"</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <p><strong>📍 Location:</strong> Pathkhola, Nepal</p>
-                    <p><strong>📞 Phone:</strong> +977 98XXXXXXXX</p>
-                    <p><strong>✉️ Email:</strong> info@paheleyouthclub.org</p>
+            <h2 class="section-title center">Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="info-item"><span>📍</span> Pathkhola, Nepal</div>
+                    <div class="info-item"><span>📞</span> +977 98XXXXXXXX</div>
+                    <div class="info-item"><span>✉️</span> info@paheleyouthclub.org</div>
                 </div>
                 <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
                     <textarea placeholder="Your Message" rows="5" required></textarea>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
@@ -134,7 +158,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Pahele Youth Club of Pathkhola. All rights reserved.</p>
+            <p>&copy; 2026 Pahele Youth Club of Pathkhola. Built with Passion.</p>
         </div>
     </footer>
 
